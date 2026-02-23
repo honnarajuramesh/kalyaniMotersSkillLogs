@@ -16,6 +16,7 @@ app.post("/log", async (req, res) => {
   try {
     const {
       agentId,
+      creAgent,
       customerName,
       customerMobile,
       ownLead,
@@ -36,6 +37,7 @@ app.post("/log", async (req, res) => {
         values: [
           [
             agentId,
+            creAgent,
             new Date().toLocaleString(),
             customerName,
             customerMobile,
